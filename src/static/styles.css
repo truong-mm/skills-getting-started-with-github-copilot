@@ -72,17 +72,49 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .activity-card ul {
-  margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: disc;
-  color: #555;
+  margin-top: 15px;
+  padding: 15px;
+  list-style-type: none;
+  background-color: #eef6ff; /* Subtle blue background for participant section */
+  border: 1px solid #b0c4de;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-card ul li:last-child {
+  margin-bottom: 0;
+}
+
+.activity-card ul li::before {
+  content: "•"; /* Add a bullet point for each participant */
+  color: #1a237e;
+  font-size: 16px;
+}
+
+.activity-card ul:before {
+  content: "Participants:";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-size: 16px;
 }
 
 .form-group {
@@ -119,7 +151,7 @@ button:hover {
   background-color: #3949ab;
 }
 
-.message {
+message {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
